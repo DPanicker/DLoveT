@@ -1,52 +1,5 @@
 package com.example.dlt;
 
-/*import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
-
-
-public class SignUp extends AppCompatActivity {
-
-    private EditText edtEmail1;
-    private EditText edtPassword1;
-    private Button btSignUp;
-
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.signup);
-
-        final DatabaseHelper dbHelper = new DatabaseHelper(this);
-        btSignUp = findViewById(R.id.btSignup);
-        edtEmail1 = findViewById(R.id.emailinput1);
-        edtPassword1 = findViewById(R.id.passwordinput1);
-        btSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!emptyValidation()) {
-                    dbHelper.addUser(new User(edtEmail1.getText().toString(), edtPassword1.getText().toString()));
-                    Toast.makeText(SignUp.this, "Added User", Toast.LENGTH_SHORT).show();
-                    edtEmail1.setText("");
-                    edtPassword1.setText("");
-                }else{
-                    Toast.makeText(SignUp.this, "Empty Fields", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-
-    }
-    private boolean emptyValidation() {
-        if (TextUtils.isEmpty(edtEmail1.getText().toString()) || TextUtils.isEmpty(edtPassword1.getText().toString())) {
-            return true;
-        }else {
-            return false;
-        }
-    }
-} */
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -105,7 +58,7 @@ public class SignUp  extends AppCompatActivity implements View.OnClickListener {
 
 
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://script.google.com/macros/s/AKfycbwQZ99eLDwSIG7GHV5nR4JbkLqD46eQd_oEmcwm5qoCZHvMwzA/exec",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "Paste your google docs script here",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
