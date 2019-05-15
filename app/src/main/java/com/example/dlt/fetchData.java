@@ -24,7 +24,7 @@ public class fetchData extends AsyncTask<Void,Void,Void> {
 
     @Override
     public Void doInBackground(Void... voids) {
-        try { //   UCRzO050f2DOQ0iZsylVH4dw
+        try { //   
             URL url = new URL("https://www.googleapis.com/youtube/v3/search?part=snippet&channelId="PASTE YOUR CHANNEL ID HERE"&eventType=live&type=video&key=AIzaSyCoFnySF8hOI0Z1pBqlqG0Lc0Ed-guRU80");
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             InputStream inputStream = httpURLConnection.getInputStream();
